@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{C9269045-DEBF-471B-866C-99D61E25C6DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{950A65B1-74CE-4DC9-9E8F-77CBE15E3787}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{A29991D1-07E8-4307-B3B1-BE7A154C80C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kiper.Condominio.WebApi", "src\Kiper.Condominio.Webapi\Kiper.Condominio.WebApi.csproj", "{073F005B-F10E-4070-BC2C-E9F9CED0C6C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kiper.Condominio.Core", "src\Kiper.Condominio.Core\Kiper.Condominio.Core.csproj", "{6F51EBC4-DE6D-49CA-9799-B215FC5E8F3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kiper.Condominio.CrossCutting.Identity", "src\Kiper.Condominio.CrossCutting.Security\Kiper.Condominio.CrossCutting.Identity.csproj", "{1DDE278B-91BB-48BB-9F22-D4B12553C723}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kiper.Condominio.CrossCutting.IoC", "src\Kiper.Condominio.CrossCutting.IoC\Kiper.Condominio.CrossCutting.IoC.csproj", "{3BEAF669-5DC6-4762-9D01-B074F40244F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kiper.Condominio.Data", "src\Kiper.Condominio.Data\Kiper.Condominio.Data.csproj", "{412D450D-F76D-435A-AC2E-BEE3122EC4DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kiper.Condominio.Domain", "src\Kiper.Condominio.Domain\Kiper.Condominio.Domain.csproj", "{992516F2-7F4B-4256-8DE4-6B5CEFF6D64C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kiper.Condominio.Data.Query", "src\Kiper.Condominio.Data.Query\Kiper.Condominio.Data.Query.csproj", "{9D0924FD-6D4F-475C-BD35-196D32DB0D5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{22F34B24-B210-4EA9-A699-908947DBE58B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiper.Condominio.Tests", "tests\Kiper.Condominio.Tests\Kiper.Condominio.Tests.csproj", "{CE1083C7-3040-4C99-B546-1332276B4637}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{073F005B-F10E-4070-BC2C-E9F9CED0C6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073F005B-F10E-4070-BC2C-E9F9CED0C6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073F005B-F10E-4070-BC2C-E9F9CED0C6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073F005B-F10E-4070-BC2C-E9F9CED0C6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F51EBC4-DE6D-49CA-9799-B215FC5E8F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F51EBC4-DE6D-49CA-9799-B215FC5E8F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F51EBC4-DE6D-49CA-9799-B215FC5E8F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F51EBC4-DE6D-49CA-9799-B215FC5E8F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DDE278B-91BB-48BB-9F22-D4B12553C723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DDE278B-91BB-48BB-9F22-D4B12553C723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DDE278B-91BB-48BB-9F22-D4B12553C723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DDE278B-91BB-48BB-9F22-D4B12553C723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BEAF669-5DC6-4762-9D01-B074F40244F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEAF669-5DC6-4762-9D01-B074F40244F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BEAF669-5DC6-4762-9D01-B074F40244F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BEAF669-5DC6-4762-9D01-B074F40244F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{412D450D-F76D-435A-AC2E-BEE3122EC4DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412D450D-F76D-435A-AC2E-BEE3122EC4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412D450D-F76D-435A-AC2E-BEE3122EC4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412D450D-F76D-435A-AC2E-BEE3122EC4DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{992516F2-7F4B-4256-8DE4-6B5CEFF6D64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{992516F2-7F4B-4256-8DE4-6B5CEFF6D64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{992516F2-7F4B-4256-8DE4-6B5CEFF6D64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{992516F2-7F4B-4256-8DE4-6B5CEFF6D64C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D0924FD-6D4F-475C-BD35-196D32DB0D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D0924FD-6D4F-475C-BD35-196D32DB0D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D0924FD-6D4F-475C-BD35-196D32DB0D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D0924FD-6D4F-475C-BD35-196D32DB0D5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE1083C7-3040-4C99-B546-1332276B4637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE1083C7-3040-4C99-B546-1332276B4637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE1083C7-3040-4C99-B546-1332276B4637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE1083C7-3040-4C99-B546-1332276B4637}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{073F005B-F10E-4070-BC2C-E9F9CED0C6C2} = {C9269045-DEBF-471B-866C-99D61E25C6DB}
+		{6F51EBC4-DE6D-49CA-9799-B215FC5E8F3D} = {950A65B1-74CE-4DC9-9E8F-77CBE15E3787}
+		{1DDE278B-91BB-48BB-9F22-D4B12553C723} = {A29991D1-07E8-4307-B3B1-BE7A154C80C1}
+		{3BEAF669-5DC6-4762-9D01-B074F40244F4} = {A29991D1-07E8-4307-B3B1-BE7A154C80C1}
+		{412D450D-F76D-435A-AC2E-BEE3122EC4DE} = {A29991D1-07E8-4307-B3B1-BE7A154C80C1}
+		{992516F2-7F4B-4256-8DE4-6B5CEFF6D64C} = {950A65B1-74CE-4DC9-9E8F-77CBE15E3787}
+		{9D0924FD-6D4F-475C-BD35-196D32DB0D5C} = {A29991D1-07E8-4307-B3B1-BE7A154C80C1}
+		{CE1083C7-3040-4C99-B546-1332276B4637} = {22F34B24-B210-4EA9-A699-908947DBE58B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9D71ACA-8922-4077-BEDD-1150D6A09AC5}
+	EndGlobalSection
+EndGlobal

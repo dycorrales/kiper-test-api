@@ -1,0 +1,119 @@
+INFO  18-47-2019 02:47:02 Microsoft.EntityFrameworkCore.Infrastructure [16] - Entity Framework Core 2.2.6-servicing-10079 initialized 'SecurityContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None 
+INFO  18-47-2019 02:47:03 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='KiperCondominio.Security' AND TABLE_NAME='__EFMigrationsHistory'; 
+INFO  18-47-2019 02:47:03 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='KiperCondominio.Security' AND TABLE_NAME='__EFMigrationsHistory'; 
+INFO  18-47-2019 02:47:03 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`; 
+INFO  18-47-2019 02:47:03 Microsoft.EntityFrameworkCore.Migrations [16] - No migrations were applied. The database is already up to date. 
+INFO  18-47-2019 02:47:03 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'KiperCondominio.Security' 
+INFO  18-47-2019 02:47:03 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (29ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`ConcurrencyStamp`, `r`.`Name`, `r`.`NormalizedName`
+FROM `AspNetRoles` AS `r`
+WHERE `r`.`NormalizedName` = @__normalizedName_0
+LIMIT 1 
+INFO  18-47-2019 02:47:03 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1 
+INFO  18-47-2019 02:47:04 Microsoft.EntityFrameworkCore.Database.Command [15] - Executed DbCommand (17ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1 
+INFO  18-47-2019 02:47:04 Microsoft.EntityFrameworkCore.Database.Command [15] - Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+SELECT `role`.`Name`
+FROM `AspNetUserRoles` AS `userRole`
+INNER JOIN `AspNetRoles` AS `role` ON `userRole`.`RoleId` = `role`.`Id`
+WHERE `userRole`.`UserId` = @__userId_0 
+INFO  18-47-2019 02:47:04 Microsoft.EntityFrameworkCore.Database.Command [14] - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`Email` = 'condominio@kiper.com.br'
+LIMIT 1 
+INFO  18-47-2019 02:47:04 Microsoft.EntityFrameworkCore.Infrastructure [16] - Entity Framework Core 2.2.6-servicing-10079 initialized 'ApplicationContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None 
+INFO  18-47-2019 02:47:04 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='KiperCondominio' AND TABLE_NAME='__EFMigrationsHistory'; 
+INFO  18-47-2019 02:47:04 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='KiperCondominio' AND TABLE_NAME='__EFMigrationsHistory'; 
+INFO  18-47-2019 02:47:04 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`; 
+INFO  18-47-2019 02:47:04 Microsoft.EntityFrameworkCore.Migrations [16] - No migrations were applied. The database is already up to date. 
+INFO  18-47-2019 02:47:04 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+                    SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+                    FROM information_schema.tables
+                    WHERE table_type = 'BASE TABLE' AND table_schema = 'KiperCondominio' 
+INFO  18-47-2019 02:47:04 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 150) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM `Condominium` AS `condominium`
+        WHERE `condominium`.`Name` = @__name_0)
+    THEN TRUE ELSE FALSE
+END 
+INFO  18-47-2019 02:47:04 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 150) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM `Condominium` AS `condominium`
+        WHERE `condominium`.`Name` = @__name_0)
+    THEN TRUE ELSE FALSE
+END 
+INFO  18-47-2019 02:47:04 Microsoft.EntityFrameworkCore.Database.Command [16] - Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 150) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM `Condominium` AS `condominium`
+        WHERE `condominium`.`Name` = @__name_0)
+    THEN TRUE ELSE FALSE
+END 
+INFO  18-47-2019 02:47:04 Microsoft.AspNetCore.Hosting.Internal.WebHost [16] - Request starting HTTP/2.0 POST http://localhost/kipercondominio/api/v1/login application/json  
+WARN  18-47-2019 02:47:05 Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware [8] - Failed to determine the https port for redirect. 
+INFO  18-47-2019 02:47:05 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Route matched with {action = "Login", controller = "Security"}. Executing action Kiper.Condominio.Webapi.Controllers.SecurityController.Login (Kiper.Condominio.WebApi) 
+INFO  18-47-2019 02:47:05 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Executing action method Kiper.Condominio.Webapi.Controllers.SecurityController.Login (Kiper.Condominio.WebApi) with arguments (Kiper.Condominio.WebApi.ViewModels.LoginViewModel) - Validation state: Valid 
+INFO  18-47-2019 02:47:05 Microsoft.EntityFrameworkCore.Infrastructure [8] - Entity Framework Core 2.2.6-servicing-10079 initialized 'SecurityContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None 
+INFO  18-47-2019 02:47:05 Microsoft.EntityFrameworkCore.Database.Command [6] - Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`NormalizedEmail` = @__normalizedEmail_0
+LIMIT 1 
+WARN  18-47-2019 02:47:05 Microsoft.AspNetCore.Identity.UserManager [8] - Invalid password for user 3ab3c5c8-f176-40b7-b639-f53338536c2b. 
+WARN  18-47-2019 02:47:05 Microsoft.AspNetCore.Identity.SignInManager [8] - User 3ab3c5c8-f176-40b7-b639-f53338536c2b failed to provide the correct password. 
+ERROR 18-47-2019 02:47:05 Kiper.Condominio.Webapi.Controllers.SecurityController [8] - "Usuário condominio@kiper.com.br não autorizado" 
+INFO  18-47-2019 02:47:05 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Executed action method Kiper.Condominio.Webapi.Controllers.SecurityController.Login (Kiper.Condominio.WebApi), returned result Microsoft.AspNetCore.Mvc.UnauthorizedResult in 109.317ms. 
+INFO  18-47-2019 02:47:05 Microsoft.AspNetCore.Mvc.StatusCodeResult [8] - Executing HttpStatusCodeResult, setting HTTP status code 401 
+INFO  18-47-2019 02:47:06 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [8] - Executed action Kiper.Condominio.Webapi.Controllers.SecurityController.Login (Kiper.Condominio.WebApi) in 346.5609ms 
+INFO  18-47-2019 02:47:06 Microsoft.AspNetCore.Hosting.Internal.WebHost [8] - Request finished in 1057.8875ms 401  
+INFO  18-47-2019 02:47:06 Microsoft.AspNetCore.Hosting.Internal.WebHost [13] - Request starting HTTP/2.0 POST http://localhost/kipercondominio/api/v1/login application/json  
+INFO  18-47-2019 02:47:06 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [19] - Route matched with {action = "Login", controller = "Security"}. Executing action Kiper.Condominio.Webapi.Controllers.SecurityController.Login (Kiper.Condominio.WebApi) 
+INFO  18-47-2019 02:47:06 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [19] - Executing action method Kiper.Condominio.Webapi.Controllers.SecurityController.Login (Kiper.Condominio.WebApi) with arguments (Kiper.Condominio.WebApi.ViewModels.LoginViewModel) - Validation state: Valid 
+INFO  18-47-2019 02:47:06 Microsoft.EntityFrameworkCore.Infrastructure [19] - Entity Framework Core 2.2.6-servicing-10079 initialized 'SecurityContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None 
+INFO  18-47-2019 02:47:06 Microsoft.EntityFrameworkCore.Database.Command [6] - Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`NormalizedEmail` = @__normalizedEmail_0
+LIMIT 1 
+INFO  18-47-2019 02:47:06 Kiper.Condominio.Webapi.Controllers.SecurityController [19] - "Usuário condominio@kiper.com.br logado com sucesso!!" 
+INFO  18-47-2019 02:47:06 Microsoft.EntityFrameworkCore.Database.Command [6] - Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+SELECT `uc`.`Id`, `uc`.`ClaimType`, `uc`.`ClaimValue`, `uc`.`UserId`
+FROM `AspNetUserClaims` AS `uc`
+WHERE `uc`.`UserId` = @__user_Id_0 
+INFO  18-47-2019 02:47:06 Microsoft.EntityFrameworkCore.Database.Command [6] - Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+SELECT `role`.`Name`
+FROM `AspNetUserRoles` AS `userRole`
+INNER JOIN `AspNetRoles` AS `role` ON `userRole`.`RoleId` = `role`.`Id`
+WHERE `userRole`.`UserId` = @__userId_0 
+INFO  18-47-2019 02:47:06 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [6] - Executed action method Kiper.Condominio.Webapi.Controllers.SecurityController.Login (Kiper.Condominio.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 159.1491ms. 
+INFO  18-47-2019 02:47:06 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [6] - Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[Kiper.Condominio.Core.Notifications.DomainNotification, Kiper.Condominio.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+INFO  18-47-2019 02:47:06 Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [6] - Executed action Kiper.Condominio.Webapi.Controllers.SecurityController.Login (Kiper.Condominio.WebApi) in 239.4221ms 
+INFO  18-47-2019 02:47:06 Microsoft.AspNetCore.Hosting.Internal.WebHost [6] - Request finished in 256.614ms 200 application/json; charset=utf-8 

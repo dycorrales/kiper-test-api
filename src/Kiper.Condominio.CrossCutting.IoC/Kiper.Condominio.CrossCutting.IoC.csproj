@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kiper.Condominio.Core\Kiper.Condominio.Core.csproj" />
+    <ProjectReference Include="..\Kiper.Condominio.CrossCutting.Security\Kiper.Condominio.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\Kiper.Condominio.Data.Query\Kiper.Condominio.Data.Query.csproj" />
+    <ProjectReference Include="..\Kiper.Condominio.Data\Kiper.Condominio.Data.csproj" />
+    <ProjectReference Include="..\Kiper.Condominio.Domain\Kiper.Condominio.Domain.csproj" />
+  </ItemGroup>
+  
+</Project>
